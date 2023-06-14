@@ -12,22 +12,23 @@ html {
 }
 
 #title {
-    font-size: 40px;
+    font-size: 30;
     margin-top: 40px;
-    color:coral;
+    color:rgb(6, 179, 58);
 }
 
 #logo {
     font-size: 50px;
     display: inline-block;
-    border-radius: 7px;
-    background-color: coral;
-    margin-top: 10px;
+    border-radius: 50%;
+    border: 10px solid rgb(6, 179, 58);
+    background-color: rgb(6, 179, 58);
+    margin-top: 20px;
 }
 
 .paragraph {
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 18px;
 }
 
 #first,
@@ -40,19 +41,19 @@ html {
 }
 
 #first {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 #second {
-    animation-delay: 5s;
+    animation-delay: 4s;
 }
 
 #third {
-    animation-delay: 7s;
+    animation-delay: 8s;
 }
 
 #fourth {
-    animation-delay: 10s;
+    animation-delay: 11s;
 }
 
 @keyframes anim-lineUp {
@@ -75,5 +76,80 @@ html {
 }
 
 button {
-    padding: 3px 5px;
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 0;
+    opacity: 0;
+    animation: 2s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;
+    background-color: rgb(6, 179, 58);
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+button > a {
+    color: white;
+    text-decoration: none;
+}
+
+#register-button {
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: rgb(7, 231, 156);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    text-align: left;
+    width: 300px;
+    font-size: 12px;
+    color: rgb(3, 156, 49);
+}
+
+input {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+#submit {
+    background-color: rgb(6, 179, 58);
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+#register-title {
+    margin-top: 50px;
+}
+
+.button-login {
+    animation: none;
+    opacity: 100%;
+    width: fit-content;
+    padding: 10px;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot {
+    background-color: brown;
+}
+
+#login-title {
+    margin-top: 50px;
 }
